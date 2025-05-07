@@ -1,0 +1,8 @@
+SecretID/
+├── backend/
+│   ├── index.js
+│   └── package.json
+├── frontend/
+│   ├── (structure React avec Vite + Tailwind)
+├── .gitignore
+└── README.md (déjà présent)
