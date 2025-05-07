@@ -1,8 +1,15 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import Room from "./Room";
+
 function App() {
   return (
-    <div className="h-screen flex items-center justify-center bg-gray-100 text-xl">
-      👋 Hello depuis SecretID
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/room/:roomID" element={<Room />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
